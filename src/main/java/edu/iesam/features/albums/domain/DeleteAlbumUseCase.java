@@ -5,10 +5,11 @@ public class DeleteAlbumUseCase {
     AlbumRepository albumRepository;
 
     public DeleteAlbumUseCase(AlbumRepository albumRepository) {
-        this.albumRepository =  albumRepository;
+        this.albumRepository = albumRepository;
     }
 
-    public void execute(Album album) {
-        this.albumRepository =  albumRepository;
+    public void execute(String albumId) {
+        albumRepository.deleteAlbum(albumId);
     }
+
 }

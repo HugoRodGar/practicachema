@@ -1,5 +1,7 @@
 package edu.iesam.features.albums.domain;
 
+import java.util.ArrayList;
+
 public class GetAlbumUseCase {
 
     AlbumRepository albumRepository;
@@ -8,10 +10,8 @@ public class GetAlbumUseCase {
         this.albumRepository = albumRepository;
     }
 
-    public void Execute(Album album) {
-        this.albumRepository =  albumRepository;
+    public ArrayList<Album> execute() {
+        return albumRepository.getAlbums();
     }
-
-    public ArrayList<Album> execute
 
 }

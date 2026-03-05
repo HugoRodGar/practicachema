@@ -30,6 +30,10 @@ public class AlbumMemLocalDataSource {
         albumsMemStorage.add(album);
     }
 
+    public void delete(String albumId) {
+        albumsMemStorage.removeIf(album -> album.getId().equals(albumId));
+    }
+
     public static AlbumMemLocalDataSource newInstance(){
         if (instance == null){
             instance = new AlbumMemLocalDataSource();

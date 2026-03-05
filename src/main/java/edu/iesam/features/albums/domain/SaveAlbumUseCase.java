@@ -8,8 +8,8 @@ public class SaveAlbumUseCase {
         this.albumRepository = albumRepository;
     }
 
-    public execute(Album album) {
-        this.albumRepository = saveRepository;
+    public void execute(Album album) {
+        albumRepository.saveAlbum(album);
     }
 
 }

@@ -2,22 +2,22 @@ package edu.iesam.features.albums.domain;
 
 public class Album {
 
-    private String id;
+    private String Id;
     private String descripcion;
     private String fecha;
 
     public Album(String id, String descripcion, String fecha) {
-        this.id = id;
+        this.Id = id;
         this.descripcion = descripcion;
         this.fecha = fecha;
     }
 
     public String getId() {
-        return id;
+        return Id;
     }
 
     public void setId(String id) {
-        this.id = id;
+        Id = id;
     }
 
     public String getDescripcion() {
@@ -35,6 +35,4 @@ public class Album {
     public void setFecha(String fecha) {
         this.fecha = fecha;
     }
-
-
 }
